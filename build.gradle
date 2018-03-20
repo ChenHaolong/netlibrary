@@ -8,9 +8,9 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.0.1'
-
-        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.0' //用于打包Maven所需文件
-        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7.2' //用于上传Maven生成的文件到Bintray
+        classpath 'com.novoda:bintray-release:0.5.0'
+//        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.0' //用于打包Maven所需文件
+//        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7.2' //用于上传Maven生成的文件到Bintray
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files

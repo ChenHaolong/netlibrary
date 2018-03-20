@@ -1,9 +1,13 @@
 apply plugin: 'com.android.library'
-apply from: "bintrayUpload.gradle"
+apply plugin: 'maven'
+apply plugin: 'com.novoda.bintray-release'
 
 android {
     compileSdkVersion 27
 
+    lintOptions {
+        abortOnError false
+    }
     defaultConfig {
         minSdkVersion 16
         targetSdkVersion 27
@@ -37,12 +41,12 @@ dependencies {
     implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
     implementation 'com.squareup.okhttp3:logging-interceptor:3.10.0'
 }
-//publish {
-//    userOrg = 'chenhaolong'
-//    groupId = 'com.chl.netlibrary'
-//    artifactId = 'netLibrary'
-//    version = '1.0.0'
-//    description = 'Super duper easy way to release your Android and other artifacts to bintray'
+publish {
+    userOrg = 'haolong'
+    groupId = 'com.chl.netlibrary'
+    artifactId = 'net-library'
+    version = '1.0.0'
+    description = 'Super duper easy way to release your Android and other artifacts to bintray'
 //    website = "https://github.com/novoda/${rootProject.name}"
-//}
+}
 
