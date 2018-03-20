@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">okhttpLibrary</string>
+    <string name="request_btn_text">请求</string>
+</resources>
