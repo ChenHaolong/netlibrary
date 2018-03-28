@@ -1,6 +1,8 @@
-使用 
-    compile 'com.chl.netlibrary:net-library:1.0.1'
-需要添加的库
+	使用 
+    	compile 'com.chl.netlibrary:net-library:1.0.1'
+	
+
+	需要添加的库
     implementation 'com.squareup.retrofit2:retrofit:2.4.0'
     implementation 'com.squareup.okhttp3:okhttp:3.10.0'
     implementation 'com.squareup.retrofit2:adapter-rxjava2:2.2.0'
